@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<VBox fx:controller="com.example.javafx_assignment.CalculatorController" alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml">
+     <children>
+         <HBox>
+             <Label text="Operand 1: " />
+             <TextField fx:id="textInput1" />
+         </HBox>
+         <HBox>
+             <Label text="Operand 2: " />
+             <TextField fx:id="textInput2" />
+         </HBox>
+         <HBox alignment="CENTER">
+             <Button text="+" onAction="#calculateAddition" />
+             <Button text="-" onAction="#calculateSubtraction" />
+             <Button text="*" onAction="#calculateMultiplication" />
+             <Button text="/" onAction="#calculateDivision" />
+         </HBox>
+         <Label fx:id="lblname" />
+     </children>
+</VBox>
